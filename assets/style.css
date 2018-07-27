@@ -1,0 +1,18 @@
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.5em;
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 768px;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+.container {
+  display: block;
+  padding: 50px;
+}

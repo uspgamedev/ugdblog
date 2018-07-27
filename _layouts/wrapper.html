@@ -1,0 +1,32 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ site.title }} | {{ post.name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% for file in site.static_files %}
+    {% if file.name == site.data.meta.stylesheet %}
+      {% assign stylesheet_path = file.path %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  <link rel="stylesheet" type="text/css"
+        media="screen" href="{{ stylesheet_path }}" />
+</head>
+
+<body>
+
+{%- include header.html -%}
+
+<hr />
+<div class="container">
+  {{ content }}
+</div>
+<hr />
+
+{%- include footer.html -%}
+
+</body>
+</html>
