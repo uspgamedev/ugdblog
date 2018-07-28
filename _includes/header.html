@@ -1,5 +1,7 @@
 
-<header>
-  <h1>{{ site.title }}</h1>
-  <p>{{ site.description }}</p>
+<header class="site-header">
+  <h1 class="site-title"><a href="{{ site.url }}">{{ site.title }}</a></h1>
+  <p class="site-desc">{{ site.description }}</p>
+  
+  {%- include links.html -%}
 </header>

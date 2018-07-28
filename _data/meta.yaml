@@ -1,2 +1,8 @@
 # Website Metadata
 stylesheet: "style.css"
+
+links:
+  forum: https://forum.uspgamedev.org
+  wiki: https://uspgamedev.org/wiki
+  github: https://github.com/uspgamedev
+  gitlab: https://gitlab.com/uspgamedev

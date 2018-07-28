@@ -1,2 +1,17 @@
 ---
+layout: "wrapper"
 ---
+
+<div class="page">
+  <h2 class="page-header">
+    <span id="page-title">{{ page.title }}</span>
+    <small>
+      <a href="{{ page.url }}">
+        <i class="fa fa-link"></i>
+      </a>
+    </small>
+  </h2>
+  <div class="page-content">
+    {{ content }}
+  </div>
+</div>
